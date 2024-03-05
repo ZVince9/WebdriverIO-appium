@@ -6,12 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "chrome-wdio": "wdio run config/chrome-wdio.conf.js --spec test/specs/chrome/chrome.test.e2e.js",
-    "android-wdio": "wdio run config/android-wdio.conf.js --spec test/specs/android/andriod.test.e2e.js"
+    "android-wdio": "wdio run config/android-wdio.conf.js --spec test/specs/android/andriod.test.e2e.js",
+    "ios-wdio": "wdio run config/ios-wdio.conf.js --spec test/specs/ios/ios.test.e2e.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@wdio/appium-service": "^8.32.3",
+    "@wdio/appium-service": "^8.32.4",
     "@wdio/cli": "^8.32.3",
     "@wdio/local-runner": "^8.32.3",
     "@wdio/mocha-framework": "^8.32.3",
@@ -21,6 +22,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "appium-xcuitest-driver": "^7.2.0",
     "chromedriver": "^122.0.4",
     "wdio-chromedriver-service": "^8.1.1"
   }

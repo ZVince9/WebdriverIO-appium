@@ -23,7 +23,7 @@ exports.config = {
   // The path of the spec files will be resolved relative from the directory of
   // of the config file unless it's absolute.
   //
-  specs: ["./test/specs/android/**/*.js"],
+  specs: ["./test/specs/ios/**/*.js"],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -52,11 +52,11 @@ exports.config = {
 
   capabilities: [
     {
-      platformName: "Android",
-      "appium:platformVersion": "14.0",
-      "appium:deviceName": "Pixel 3",
-      "appium:automationName": "UIAutomator2",
-      "appium:app": "/Users/zilvinasstanevicius/Downloads/ApiDemos-debug.apk",
+      "appium:platformVersion": "17.0",
+      "appium:deviceName": "iPhone 15",
+      "appium:automationName": "XCUITest",
+      "appium:platformName": "ios",
+      "appium:app": "/Users/zilvinasstanevicius/Downloads/MyRNDemoApp.app",
     },
   ],
 
