@@ -1,0 +1,27 @@
+{
+  "name": "appium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "chrome-wdio": "wdio run config/chrome-wdio.conf.js --spec test/specs/chrome/chrome.test.e2e.js",
+    "android-wdio": "wdio run config/android-wdio.conf.js --spec test/specs/android/andriod.test.e2e.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/appium-service": "^8.32.3",
+    "@wdio/cli": "^8.32.3",
+    "@wdio/local-runner": "^8.32.3",
+    "@wdio/mocha-framework": "^8.32.3",
+    "@wdio/spec-reporter": "^8.32.2",
+    "appium-uiautomator2-driver": "^3.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "chromedriver": "^122.0.4",
+    "wdio-chromedriver-service": "^8.1.1"
+  }
+}
